@@ -14,7 +14,7 @@
 %% API
 %%====================================================================
 
-start() -> {ok, Pid} = mysql:start_link([{host, "localhost"}, {user, "cobra"}, {password, "papper88"}, {database, "database"}]).
+start() -> {ok, Pid} = mysql:start_link([{host, "localhost"}, {user, "user"}, {password, "password"}, {database, "database"}]).
   
 
 %%--------------------------------------------------------------------
