@@ -30,7 +30,7 @@ start() ->
 	end).
 
 init() ->
-	{ok, C} = emqttc:start_link([{host, "broker.hivemq.com"},{client_id, <<"leCobra">>}]),
+	{ok, C} = emqttc:start_link([{host, "prata.technocreatives.com"},{client_id, <<"leCobra">>}]),
 	emqttc:subscribe(C, <<"ConnectingSpot/Chatroom/#">>, 1),
 	emqttc:subscribe(C, <<"ConnectingSpot/Database/#">>, 1),
 	{ok, Db} = dbclient_app:start(),
