@@ -63,7 +63,7 @@ loop({C,Db}) ->
 			loop({C,Db});
  	
 	  
-		unknown ->
+		undefined ->
 		
 			loop({C,Db})
 	end.
